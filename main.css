@@ -133,12 +133,13 @@ figure{
 figcaption {
 	font-weight:bold;
 }
-		/*lists in main text*/
-	.main a {
+		/*links in main text*/
+.main a {
 	text-decoration:none;
 	background:#E4FFCC;
 	color:#999933;
 }
+		/*lists in main text*/
 .main li{
 	margin:0 0 0 1em;
 }
@@ -162,6 +163,28 @@ table, td, th {
 table{
 	margin:auto;
 }
+
+/*footer*/
+
+footer, footer a{
+	text-align:center;
+	text-transform:uppercase;
+	color:#908E8E;
+	text-decoration:none;
+	height:70px;
+}
+footer hr{
+	height:1px;
+	margin-bottom:10px;
+}
+		/*links in main text*/
+footer a {
+	text-decoration:none;
+	border-bottom:1px dashed #999933;
+	color:#999933;
+}
+
+
 
 
 #extra1{ 											/*strips in top of page*/
