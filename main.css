@@ -1,0 +1,114 @@
+*{margin:0; padding:0;} 								/* All clear*/
+
+body{
+	background:rgb(224,219,213); 						/*цвет фона*/
+	position:relative;
+	font:11px 'helvetica','verdana','geneva', sans-serif;
+	color:#5F5959;
+
+}
+
+#page-wrapper{
+	position:absolute;	
+	display:block;
+	margin:0 auto;
+	left:auto;
+}
+
+header, .main, footer{
+	background:#FFFFFF;
+	width:600px;								/*width of middle box*/
+	position:relative;
+	left:60px;
+}
+
+/*header and background*/
+
+header{
+	padding-top:2.2em;
+	padding-bottom:3em;
+	/*shadow in top of header*/
+	background:         linear-gradient(to bottom, rgba(235, 229, 234, 1), rgba(255, 255, 255, 1));
+	background: -webkit-linear-gradient(to bottom, rgba(235, 229, 234, 1), rgba(255, 255, 255, 1));
+	background:    -moz-linear-gradient(to bottom, rgba(235, 229, 234, 1), rgba(255, 255, 255, 1));
+}
+
+	hr {
+		margin:auto;
+		height:3px;
+		border:none;
+		background:rgb(210,210,210);
+	}
+	hr.right {
+		float:right;
+		margin-right:25px;
+		width:60%;
+		
+	}
+	hr.left {
+		float:left;
+		width:2%;
+		margin-left:20px;}
+	h1{
+		padding-top:70px;
+		height:0;
+		overflow:hidden; 																						/*to hide principal text*/
+		background: url(images/title2.png) -20% -5% no-repeat;			/*the name in header*/
+		background-size: 95%;
+		width:202px;
+		position:relative;
+		top:44px;
+		left:1.3em;
+		border-radius:14px;
+		
+	}
+	h2,h3 {
+		/*font-family:'for_h3','helvetica', sans-serif;*/
+		color:#47484A;
+		line-height:1.2em;
+		font-size:95%;
+		word-spacing:0.5px;
+		letter-spacing:0.015em;
+	}
+	h2{
+		text-transform:uppercase;
+		font-size:100%;
+	}
+	.quotes{
+	margin:2.5em 0 0 2.5em;
+	margin-right:5em;
+	padding-top:1em;
+	/*min-height:60px;*/
+	background:url(images/quotes3.png) 2% 0% no-repeat;
+	background-size: 12%;
+	padding-left:5em;
+	/*font-family:'for_quotes','Century', sans-serif;*/
+	font-size:130%;
+	font-weight:bold;
+	font-style:italic;
+	text-indent:1em;
+}
+
+
+
+
+
+
+#extra1{ 											/*strips in top of page*/
+	height:75px;
+	background:transparent url(images/black_lines1.jpeg) repeat-x;
+	opacity: 0.01;
+	z-index:1;
+	position:relative;
+}
+
+#extra4{ 											/*left side tag*/
+	width:24px;
+	height:125px;
+	position:absolute;
+	top:50px;
+	left:44px;
+	background:transparent url(images/atu3.jpeg) no-repeat;
+	background-size: 65%;
+	z-index:-1;
+}
