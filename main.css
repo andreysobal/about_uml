@@ -177,15 +177,97 @@ footer hr{
 	height:1px;
 	margin-bottom:10px;
 }
-		/*links in main text*/
+		/*links in footer*/
 footer a {
 	text-decoration:none;
-	border-bottom:1px dashed #999933;
-	color:#999933;
+	font-style:italic;
+	border-bottom:.1em dotted;
 }
 
+/*navigation*/
 
+aside{
+	background:rgb(181,176,162); 						/*side navigation bar*/
+	width:260px;
+	position:absolute;
+	top:130px;
+	left:660px;
+	margin-bottom:15px;
+}
+nav{margin-top:30px;}
+nav > ul{
+	display:block;
+	bottom:0;
+	right:0;
+	margin-bottom:100px;	
+}
+li.aside_pointer{
+	list-style-image: url(images/arr5.ico);
+	list-style-position: inside;
+	padding-left:15px;
+	/*margin-left:15px;*/
+	margin-bottom:10px;
+	background:#47484A;
+	width:75%;
+	min-height:25px;
+}
+li.aside_pointer span{ 									/*headers in navigation*/
+	color:white;
+	font-size:93%;
+	letter-spacing:-0.02em;
+	text-align:left;
+	vertical-align: center;
+	text-transform:uppercase;
+	font-family:'Nav_title','helvetica','arial', sans-serif;*/
+}
+li.aside_pointer:first-child{ 											/*yellow strip under main navigation header*/
+	background:transparent url(images/button_bg2.jpeg);
+	/*opacity:0.70;*/	
+}
+li.aside_pointer:last-of-type{
+	margin-top:25px;
+}
+li.low_nav, 
+li.high_nav,
+li.main_page{
+	margin:0 50px 0 15px;
+	padding:7px 0;
+	list-style-position: inside;
+}
+li.low_nav, 
+li.main_page{
+	list-style-type:none;
+	margin-left:30px;
+}
+li.high_nav{
+	list-style-image: url(images/nav6.ico);
+	border-bottom: 1px solid rgb(211,206,206);
+}
+li.main_page {
+	margin-bottom:55px;
+}
+		/*links in navigation*/
+li.low_nav a, 
+li.high_nav a, 
+li.main_page a, 
+li.main_page {
+	color:#47484A;
+	font-weight:600;
+	font-size:100%;
+	text-align:left;
+	text-decoration:none;
+}
+li.main_page a{ 
+	color:#E5E2E3;
+}
+li.low_nav a:hover, 
+li.high_nav a:hover,
+a:hover{
+	color:white;
+	background:#A4B93C;
+}
 
+/*additional blocks for special effects*/
 
 #extra1{ 											/*strips in top of page*/
 	height:75px;
@@ -195,7 +277,28 @@ footer a {
 	position:relative;
 }
 
-#extra4{ 											/*left side tag*/
+#extra2{ 											/*1 level of shadow under navigation bar*/
+	width:30px;
+	height:30px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	border-radius:2px;
+	box-shadow:0 0 25px 3px rgba(104,104,104,0.4);
+	z-index:-1;
+}
+#extra3{											/*2 level of shadow under navigation bar*/
+	width:160px;
+	height:70px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	border-radius:10px;
+	box-shadow:0 0 10px 2px rgba(104,104,104,0.5);
+	z-index:-2;*/
+}
+
+#extra4{ 											/*top-left side tag*/
 	width:24px;
 	height:125px;
 	position:absolute;
